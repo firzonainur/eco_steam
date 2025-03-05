@@ -53,6 +53,98 @@
         <!-- Datatable init js -->
         <script src="assets/js/pages/datatables.init.js"></script>
 
+        <!-- demo js-->
+        <script src="assets/js/pages/chartist.init.js"></script>
+
+        <!-- Plugin Js-->
+        <script src="assets/libs/chartist/chartist.min.js"></script>
+        <script src="assets/libs/chartist-plugin-tooltips-updated/chartist-plugin-tooltip.min.js"></script>
+        <!-- demo js-->
+        <script src="assets/js/pages/chartist.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+        <script>
+        new Chartist.Bar('#stacked-bar-chart', {
+            labels: ["Modal", "Konsumsi", "Produksi", "Perlengkapan", "Keluarga", "Gadget"],
+            series: [
+                [900000, 0, 0, 0, 0, 0],  /* Q1 */
+                [0, 1200000, 0, 0, 0, 0], /* Q2 */
+                [0, 0, 1400000, 0, 0, 0], /* Q3 */
+                [0, 0, 0, 1300000, 0, 0], /* Q4 */
+                [0, 0, 0, 0, 1520000, 0], /* Q5 */
+                [0, 0, 0, 0, 0, 1400000]  /* Q6 */
+            ]
+        }, {
+            stackBars: true,
+            axisY: {
+                labelInterpolationFnc: function(value) {
+                    return value / 1000 + 'k';
+                }
+            },
+            plugins: [
+                Chartist.plugins.tooltip()
+            ]
+        }).on('draw', function(data) {
+            if (data.type === 'bar') {
+                data.element.attr({
+                    style: 'stroke-width: 30px'
+                });
+            }
+        });
+        </script>
+
+        <!-- flot plugins -->
+        <script src="assets/libs/flot-charts/jquery.flot.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.time.js"></script>
+        <script src="assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.resize.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.pie.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.selection.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.stack.js"></script>
+        <script src="assets/libs/flot-spline/js/jquery.flot.spline.min.js"></script>
+        <script src="assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+
+        <!-- flot init -->
+        <script src="assets/js/pages/flot.init.js"></script>
+
+        <script>
+        $(function() {
+            var data = [
+                { label: "Modal", data: 25, color: "#3051d3" },
+                { label: "Konsumsi", data: 20, color: "#7c8a96" },
+                { label: "Produksi", data: 15, color: "#3ddc97" },
+                { label: "Perlengkapan", data: 10, color: "#e4cc37" },
+                { label: "Keluarga", data: 20, color: "#00a7e1" },
+                { label: "Gadget", data: 10, color: "#f06543" }
+            ];
+
+            $.plot("#flot-pie-chart", data, {
+                series: {
+                    pie: {
+                        show: true,
+                        radius: 1,
+                        label: {
+                            show: true,
+                            radius: 2 / 3,
+                            formatter: function(label, series) {
+                                return "<div style='font-size:10pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+                            },
+                            threshold: 0.1
+                        }
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true
+                },
+                legend: {
+                    show: false
+                }
+            });
+        });
+    </script>
+
 
 
 

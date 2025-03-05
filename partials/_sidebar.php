@@ -7,6 +7,12 @@
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li class="menu-title">Menu User</li>
                             <li>
+                                <a href="form.php" class="waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div><span class="badge badge-pill badge-success float-right"></span>
+                                    <span>Form</span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="studikasus.php" class="waves-effect">
                                     <div class="d-inline-block icons-sm mr-1"><i class="uim uim-document-layout-left"></i></div><span class="badge badge-pill badge-success float-right"></span>
                                     <span>Case Study</span>
@@ -16,6 +22,12 @@
                                 <a href="history.php" class="waves-effect">
                                     <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div><span class="badge badge-pill badge-success float-right"></span>
                                     <span>History</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="result.php" class="waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div><span class="badge badge-pill badge-success float-right"></span>
+                                    <span>Result</span>
                                 </a>
                             </li>
 

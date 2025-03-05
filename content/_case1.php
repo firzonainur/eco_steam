@@ -140,58 +140,27 @@
                                 <div class="col-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <form class="form-inline float-right">
-                                                <div class="input-group mb-3">
-                                                    <input type="text" class="form-control form-control-sm datepicker-here" data-range="true"  data-multiple-dates-separator=" - " data-language="en" placeholder="Select Date" />
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text"><i class="far fa-calendar font-size-12"></i></span>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <h5 class="header-title mb-4">Component Chart</h5>
-                                            <div id="yearly-sale-chart" class="apex-charts"></div>
+                
+                                            <h4 class="header-title">Budget Planning</h4>
+                                            <p class="card-title-desc"></p>
+                
+                                            <div id="stacked-bar-chart" class="ct-chart ct-golden-section" dir="ltr"></div>
                                         </div>
                                     </div>
                                 </div>
 
-                                 <div class="col-6">
+                                <div class="col-xl-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="header-title mb-4">Pie Chart Komponen Usaha</h5>
-                                            <div id="radial-chart" class="apex-charts"></div>
-
-                                            <div class="text-center mt-3">
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-primary mr-1"></i> Modal Awal</p>
-                                                            <h5>Rp10.000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-warning mr-1"></i> Biaya Operasional</p>
-                                                            <h5>Rp5000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-success mr-1"></i>Harga Jual</p>
-                                                            <h5>Rp6000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-success mr-1"></i>Estimasi Keuntungan</p>
-                                                            <h5>Rp1.000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+        
+                                            <h4 class="header-title">Budget Planning</h4>
+                                            <p class="card-title-desc"></p>
+        
+                                            <div id="flot-pie-chart" style="height: 300px"></div>
+        
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-12">
                                      <div class="card">
                                         <div class="card-body">
