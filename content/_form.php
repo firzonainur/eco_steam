@@ -109,102 +109,85 @@
                                                 </div>
                                             </div>
 
-                                                
-
-                                                <h3>Spending <span class="badge badge-soft-primary"></span></h3>
-
-                                                
-
-                                             
-                                             <div class="form-group row">
-                                                <div class="col-md-10 offset-md-0">
-                                                    <button type="submit" class="btn btn-success">+</button>
-                                                </div>
+                                            <div class="mt-3">
+                                                <label>Description</label>
+                                                <p class="text-muted mb-2">
+                                                    Minimum description is 200 words
+                                                </p>
+                                                <textarea id="textarea" class="form-control" maxlength="200" rows="3" placeholder="200 words"></textarea>
                                             </div>
 
-
-
-    
-                                            <div class="form-group row">
                                             </div>
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-md-4">
-                                                        <input class="form-control" type="text" id="production-cost" placeholder="Input Component">
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <input class="form-control" type="number" id="production-cost" placeholder="Input The Price (Rp)">
-                                                    </div>
-                                                     <div class="col-md-1">
-                                                        <h3><span class="badge badge-soft-primary">.. %</span></h3>
-                                                    </div>
-                                                </div>
-
-                                                
+                                        </div>
+                                    </div>
 
 
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-md-10 offset-md-0">
-                                                        <button type="submit" class="btn btn-primary">Save</button>
-                                                    </div>
-                                                </div>
+                                           
 
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                             <h3>Spending <span class="badge badge-soft-primary"></span></h3>                                             
+                                                             <div class="form-group row">
+                                                                <div class="col-md-10 offset-md-0">
+                                                                    <button type="submit" class="btn btn-success">+</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                            </div>
+                                                                
+                                                                <div class="form-group row">
+                                                                    <div class="col-md-4">
+                                                                        <input class="form-control" type="text" id="production-cost" placeholder="Input Component">
+                                                                    </div>
+                                                                    <div class="col-md-7">
+                                                                        <input class="form-control" type="number" id="production-cost" placeholder="Input The Price (Rp)">
+                                                                    </div>
+                                                                     <div class="col-md-1">
+                                                                        <h3><span class="badge badge-soft-primary">.. %</span></h3>
+                                                                    </div>
+                                                                </div>
+
+                                                                
+
+
+                                                                
+                                                                <div class="form-group row">
+                                                                    <div class="col-md-10 offset-md-0">
+                                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                                    </div>
+                                                                </div>
+
+                                                        
+                                            
                                         </div>
                                     </div>
                                 </div>
 
+
+
+                                                
                                 <div class="col-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <form class="form-inline float-right">
-                                                <div class="input-group mb-3">
-                                                    <input type="text" class="form-control form-control-sm datepicker-here" data-range="true"  data-multiple-dates-separator=" - " data-language="en" placeholder="Select Date" />
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text"><i class="far fa-calendar font-size-12"></i></span>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <h5 class="header-title mb-4">Component Chart</h5>
-                                            <div id="yearly-sale-chart" class="apex-charts"></div>
+                
+                                            <h4 class="header-title">Budget Planning</h4>
+                                            <p class="card-title-desc"></p>
+                
+                                            <div id="stacked-bar-chart" class="ct-chart ct-golden-section" dir="ltr"></div>
                                         </div>
                                     </div>
                                 </div>
 
-                                 <div class="col-6">
+                                <div class="col-xl-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="header-title mb-4">Pie Chart Komponen Usaha</h5>
-                                            <div id="radial-chart" class="apex-charts"></div>
-
-                                            <div class="text-center mt-3">
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-primary mr-1"></i> Modal Awal</p>
-                                                            <h5>Rp10.000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-warning mr-1"></i> Biaya Operasional</p>
-                                                            <h5>Rp5000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-success mr-1"></i>Harga Jual</p>
-                                                            <h5>Rp6000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div>
-                                                            <p class="text-muted"><i class="mdi mdi-circle text-success mr-1"></i>Estimasi Keuntungan</p>
-                                                            <h5>Rp1.000.000</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+        
+                                            <h4 class="header-title">Budget Planning</h4>
+                                            <p class="card-title-desc"></p>
+        
+                                            <div id="flot-pie-chart" style="height: 300px"></div>
+        
                                         </div>
                                     </div>
                                 </div>
@@ -224,6 +207,7 @@
                                                             <th scope="col">Transaction ID</th>
                                                             <th scope="col">Komponen Usaha</th>
                                                             <th scope="col">Amount</th>
+                                                            <th scope="col">Presentase</th>
                                                             <th scope="col">Action</th>
                                                         </tr>
                                                     </thead>
@@ -235,6 +219,7 @@
                                                             <td>Bahan Baku</td>
                                                            
                                                             <td>Rp1.000.000</td>
+                                                            <td>10%</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
                                                                     <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="View">
@@ -256,6 +241,7 @@
                                                             <td>Peralatan</td>
                                                             
                                                             <td>Rp300.000</td>
+                                                            <td>10%</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
                                                                     <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="View">
@@ -277,6 +263,7 @@
                                                             <td>Marketing</td>
                                                             
                                                             <td>Rp700.000</td>
+                                                            <td>10%</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
                                                                     <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="View">
@@ -298,6 +285,7 @@
                                                             <td>Transportasi</td>
                                                             
                                                             <td>Rp400.000</td>
+                                                            <td>10%</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
                                                                     <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="View">
@@ -319,6 +307,7 @@
                                                             <td>Gaji Karyawan</td>
                                                             
                                                             <td>Rp2.000.000</td>
+                                                            <td>10%</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
                                                                     <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="View">

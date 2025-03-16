@@ -143,7 +143,62 @@
                 }
             });
         });
+
+
+        // menampilkan tipe chart
+        document.addEventListener("DOMContentLoaded", function () {
+    const ctxPie = document.getElementById("flot-pie-chart").getContext("2d");
+    const ctxBar = document.getElementById("stacked-bar-chart").getContext("2d");
+
+    // Data untuk chart
+    const data = {
+        labels: ["Category A", "Category B", "Category C", "Category D"],
+        datasets: [{
+            label: "Budget Allocation",
+            data: [40, 25, 20, 15],
+            backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0"],
+        }]
+    };
+
+    // Inisialisasi Pie Chart
+    const pieChart = new Chart(ctxPie, {
+        type: "pie",
+        data: data,
+    });
+
+    // Inisialisasi Bar Chart
+    const barChart = new Chart(ctxBar, {
+        type: "bar",
+        data: data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Fungsi untuk menampilkan chart yang dipilih
+    function updateChartDisplay() {
+        const isPieSelected = document.getElementById("option1").checked;
+        document.getElementById("flot-pie-chart").parentElement.style.display = isPieSelected ? "block" : "none";
+        document.getElementById("stacked-bar-chart").parentElement.style.display = isPieSelected ? "none" : "block";
+    }
+
+    // Tambahkan event listener pada tombol radio
+    document.querySelectorAll("input[name='options']").forEach(input => {
+        input.addEventListener("change", updateChartDisplay);
+    });
+
+    // Panggil fungsi untuk mengatur tampilan awal
+    updateChartDisplay();
+});
+
+
     </script>
+
+
 
 
 
